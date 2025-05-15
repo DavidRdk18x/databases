@@ -1,0 +1,16 @@
+Preview SQL
+
+CREATE TABLE `magazin`.
+`produse` (`idprodus` INT UNSIGNED NOT NULL AUTO_INCREMENT , 
+`numeprodus` VARCHAR(100) NOT NULL , 
+`cantitate` INT NOT NULL DEFAULT '0' , 
+`idfirma` INT(50) NOT NULL , 
+`firma` VARCHAR NOT NULL , 
+`adresafirma` VARCHAR(10) NOT NULL , 
+`modelprodus` VARCHAR NOT NULL , 
+`stocproduse` INT NOT NULL DEFAULT '0' , 
+`pret` DECIMAL(10,2) NOT NULL , 
+`descriereprodus` VARCHAR(100) NOT NULL , 
+`data-adaugade` TIMESTAMP(100) NOT NULL , 
+ PRIMARY KEY (`idprodus`))
+ ENGINE = InnoDB;
