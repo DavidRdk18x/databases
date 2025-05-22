@@ -7,7 +7,7 @@ export interface User extends BasicUser {
     datanastere:Date, //string
     email:string,
     telefon: string,
-    CNP?:string,
+    cnp?:string,
     dataadaugare?:Date,
     actiune?:string
 }

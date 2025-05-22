@@ -53,6 +53,7 @@ $(document).ready(function ($) {
                 { "data": "prenume" },
                 { "data": "email" },
                 { "data": "telefon" },
+                { "data": "cnp" },
                 {
                     "data": "datanastere",
                     render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss.SSSSZ','YYYY-MM-DD' )
@@ -79,7 +80,7 @@ $(document).ready(function ($) {
     //   Editeaza utilizator
     $('body').on('click', '.edit', function () {
         var id = $(this).data('id');
-        $('#userModel').html("Edit User aaaaaaaa");
+        $('#userModel').html("Edit User");
         $('#btn-save').val("editUser");
         $('#user-model').modal('show');
         // ajax
@@ -101,9 +102,7 @@ $(document).ready(function ($) {
                 $('#email').val(res.data.email);
                 $('#age').val(datan);
                 $('#phone').val(res.data.telefon);
-
-
-
+                $('#cnp').val(res.data.cnp);
             }
         });
     });
